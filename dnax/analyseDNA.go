@@ -95,9 +95,9 @@ func display(results map[string]string, w io.Writer) error {
 
 		displayKey = strings.ReplaceAll(displayKey, "_", " ")
 		if key == "Base Count" {
-			value = colorize(value)
+			value = format(value)
 		} else if key == "Complementary Sequence" {
-			value = colorize(value)
+			value = format(value)
 		}
 		if _, err := fmt.Fprintf(w, " %s: %s\n", displayKey, value); err != nil {
 			return err
@@ -106,8 +106,11 @@ func display(results map[string]string, w io.Writer) error {
 	return nil
 }
 
-func colorize(s string) string {
+func format(s string) string {
 
+	if len(s) >= 128 {
+		s = s[:128]
+	}
 	if !useColor {
 		return s
 	}

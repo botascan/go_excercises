@@ -1,0 +1,27 @@
+1. DNA Sequence Analyzer (Beginner)
+Build a command-line tool that reads DNA sequences and performs basic analyses. The program should calculate GC content (percentage of G and C nucleotides), 
+count each nucleotide, find the reverse complement, and validate that the sequence only contains valid bases (A, T, G, C). 
+This project teaches you Go basics like string manipulation, maps, file I/O, and functions while working with fundamental bioinformatics concepts.
+
+2. FASTA File Parser and Processor (Beginner-Intermediate)
+Create a parser for FASTA format files (the standard format for biological sequences). 
+Your tool should read multi-sequence FASTA files, extract sequence IDs and descriptions, filter sequences by length or GC content, and export filtered results. 
+This introduces you to working with structured file formats, structs, slices, and more complex data organization patterns in Go.
+
+3. K-mer Counter and Frequency Analyzer (Intermediate)
+Develop a program that identifies and counts k-mers (subsequences of length k) in DNA or protein sequences. 
+Implement efficient k-mer counting using hash maps, find the most frequent k-mers, calculate k-mer diversity metrics, and optionally visualize k-mer distributions. 
+This project helps you learn about algorithmic efficiency, concurrent programming with goroutines for processing large genomes, and working with biological sequence patterns used in genome assembly and analysis.
+
+4. Pairwise Sequence Alignment Tool (Intermediate-Advanced)
+Implement the Needleman-Wunsch algorithm for global sequence alignment or Smith-Waterman for local alignment. 
+Your tool should support custom scoring matrices (like BLOSUM or PAM for proteins), handle gap penalties, use dynamic programming efficiently, and format aligned sequences with visual indicators. 
+This teaches you dynamic programming, matrix operations, algorithm optimization, and core computational biology techniques used to compare sequences and identify evolutionary relationships.
+
+5. Parallel Genome Assembly Pipeline (Advanced)
+Build a simplified genome assembler that takes short DNA reads and assembles them into longer contiguous sequences (contigs). 
+Implement a de Bruijn graph approach for assembly, use goroutines to parallelize graph construction and traversal, handle error correction in reads, and optimize memory usage for large datasets. 
+This challenging project combines graph algorithms, concurrent programming, memory management, and gives you insight into one of the most computationally intensive problems in bioinformatics—reconstructing genomes from sequencing data.
+
+Each project builds on skills from the previous ones while introducing new Go features and bioinformatics algorithms. 
+You'll progress from basic string processing to complex graph algorithms and parallel computing, all within the context of real biological data analysis problems.
